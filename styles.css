@@ -2,47 +2,121 @@
     box-sizing: border-box;
   }
   
-  /* Style the body */
   body {
-    font-family: Arial;
+    font-family: monospace;
+    font-size: 1rem;
     margin: 0;
-  }
-  
-  /* Header/logo Title */
-  .header {
-    padding: 1rem;
-    text-align: left;
-    background: lightgrey;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
 
-  /* HOME PAGE */
+/* Header/Title */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    color: black;
+    /*border-bottom: solid 1px #333;*/
+}
+
+.titles {
+    text-align: left;
+}
+
+.name {
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 2px 2px 4px hotpink;
+}
+
+.titles h1 {
+  margin: 0; /* Remove default margin for h1 to adjust spacing */
+}
+
+.titles h2 {
+  margin: 0; /* Remove default margin for h2 to adjust spacing */
+  font-size: 1.2rem; /* Adjust the font size of h2 (change as needed) */
+}
+
+/*Navbar*/
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: hotpink;
+}
+
+
+/* HOME PAGE */
 
   /* Column container */
-  .row {  
-    display: flex;
-    flex-wrap: wrap;
-  }
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
   
-  /* Sidebar/left column */
-  .side {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  /* Main column */
-  .main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-  }
-  
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
+/* Sidebar/left column */
+.side {
+  flex: 0 0 20%;
+  padding: 20px;
+  /*display: flex; /* Use flexbox to align items */
+  /*flex-direction: column; /* Stack items vertically */
+  /*align-items: center; /* Center items horizontally */
+  /*justify-content: center; /* Center items vertically */
+  text-align: center;
+}
+
+/* Main column */
+.main {
+  flex: 1;
+  padding: 20px;
+  margin-left: 2rem;
+}
+
+
+/* social icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center the icons horizontally within the .social-icons container */
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: hotpink;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+ 
