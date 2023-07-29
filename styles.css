@@ -76,7 +76,7 @@ nav a:hover {
 /* Sidebar/left column */
 .side {
   flex: 0 0 20%;
-  padding: 20px;
+  padding: 30px;
   /*display: flex; /* Use flexbox to align items */
   /*flex-direction: column; /* Stack items vertically */
   /*align-items: center; /* Center items horizontally */
@@ -89,8 +89,9 @@ nav a:hover {
 /* Main column */
 .main {
   flex: 1;
-  padding-left: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 10px;
+  padding-left: 30px;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 
