@@ -43,7 +43,7 @@
 
 .name {
   font-family: 'Rock Salt', cursive;
-  text-shadow: 2px 2px 4px #01dddd;
+  text-shadow: 2px 2px 4px #ff598f;
 }
 
 .titles h1 {
@@ -133,7 +133,7 @@ nav a:hover {
 
 img {
  border-radius: 6px;
- box-shadow: 10px 10px 0 0 #ff598f;
+ box-shadow: 10px 10px 0 0  #00bfaf ;
 }
 
 
@@ -183,7 +183,6 @@ img {
   width: 300px;
   padding: 20px;
   background-color: #f5f5f5;
-  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
   box-shadow: 10px 10px #e0e300;
   border-radius: 8px;
   margin: 10px;
@@ -213,5 +212,8 @@ img {
   display: flex; 
   flex-wrap: wrap; 
   justify-content: flex-start; 
-  margin: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
