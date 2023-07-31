@@ -142,15 +142,36 @@ img {
   flex: 1;
   padding-top: 10px;
   padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
   background-color: white;
   border: solid 2px black;
   box-shadow: 10px 10px #00bfaf;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
   margin-right: 4rem;
+   /* Add scroll bar */
+   max-height: 600px; /* Set the maximum height for the container */
+   overflow: auto; /* Add a scroll bar when content overflows the container*/
 }
 
+.resume::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resume::-webkit-scrollbar-thumb {
+  background-color: #fd8a5e;
+  border-radius: 4px;
+}
+
+.resume::-webkit-scrollbar-thumb:hover {
+  background-color: #ff598f;
+}
+
+.resume::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
 
 
 
