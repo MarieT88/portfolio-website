@@ -100,8 +100,8 @@ nav a:hover {
   padding-bottom: 30px;
   padding-right: 30px;
   background-color: white;
-  border: solid 2px black;
-  box-shadow: 10px 10px #fd8a5e;
+  border-radius: 8px;
+  box-shadow: 10px 10px #e0e300;
   margin-top: 2rem;
   margin-bottom: 4rem;
   margin-left: 2rem;
@@ -132,7 +132,7 @@ nav a:hover {
 }
 
 img {
- border: solid 2px black;
+ border-radius: 6px;
  box-shadow: 10px 10px 0 0 #ff598f;
 }
 
@@ -145,8 +145,8 @@ img {
   padding-right: 30px;
   padding-bottom: 30px;
   background-color: white;
-  border: solid 2px black;
-  box-shadow: 10px 10px #00bfaf;
+  border-radius: 8px;
+  box-shadow: 10px 10px #e0e300;
   margin-top: 2rem;
   margin-bottom: 4rem;
   margin-left: 2rem;
@@ -176,4 +176,42 @@ img {
 }
 
 
+/*PROJECTS PAGE*/
+/* Basic styles for the cards */
+.card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 10px 10px #e0e300;
+  border-radius: 8px;
+  margin: 10px;
+}
 
+/* Styles for the card content */
+.card-content {
+  padding: 10px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-content p {
+  margin: 0;
+}
+
+.projectcontainer {
+  display: flex; 
+}
+
+/* Styles for the cards container */
+.cards-container {
+  flex: 1; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+  margin: 20px;
+}
