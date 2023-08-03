@@ -178,6 +178,7 @@ img {
 
 /*PROJECTS PAGE*/
 /* Basic styles for the cards */
+
 .card {
   display: inline-block;
   width: 300px;
@@ -188,7 +189,6 @@ img {
   margin: 10px;
 }
 
-/* Styles for the card content */
 .card-content {
   padding: 10px;
 }
@@ -206,7 +206,6 @@ img {
   display: flex; 
 }
 
-/* Styles for the cards container */
 .cards-container {
   flex: 1; 
   display: flex; 
@@ -217,3 +216,6 @@ img {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+
+
