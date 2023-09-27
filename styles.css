@@ -136,6 +136,11 @@ img {
  box-shadow: 8px 8px 0 0  #00bfaf ;
 }
 
+.aqua-text {
+  color: #00bfaf;
+  font-weight: bolder;
+}
+
 
 /*RESUME PAGE*/
 .resume {
