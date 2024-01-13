@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #eff17f;
+    background-color: lightpink;
   }
   
 
@@ -32,9 +32,10 @@
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 6rem;
-    color: black;
-    background-image: linear-gradient(180deg, #fdb89e, #eff17f
-    );
+    /*color: black;*/
+    background-color: lightpink;
+    /*background-image: linear-gradient(180deg, #fdb89e, #eff17f
+    );*/
 }
 
 .titles {
@@ -42,8 +43,11 @@
 }
 
 .name {
-  font-family: 'Rock Salt', cursive;
-  text-shadow: 2px 2px 4px #ff598f;
+  /*font-family: 'Rock Salt', cursive;*/
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  /*text-shadow: 2px 2px 4px #ff598f;*/
+  font-size: 4rem;
+  padding: none;
 }
 
 .titles h1 {
@@ -60,6 +64,8 @@
 nav {
   display: flex;
   gap: 20px;
+  flex-direction: column;
+  font-family: 'Coming Soon', cursive;
 }
 
 nav a {
@@ -68,6 +74,7 @@ nav a {
   font-weight: bold;
   padding: 5px 10px;
   transition: background-color 0.3s ease;
+  display: block;
 }
 
 nav a:hover {
@@ -89,7 +96,7 @@ nav a:hover {
   flex: 0 0 20%;
   padding: 30px;
   text-align: center;
-  background:#eff17f; 
+  background: lightpink; 
 }
 
 /* Main column */
@@ -113,6 +120,7 @@ nav a:hover {
   display: flex;
   gap: 10px;
   justify-content: center; 
+  padding-top: .5rem;
 }
 
 .social-icons a {
@@ -141,6 +149,10 @@ img {
   font-weight: bolder;
 }
 
+.handwritten {
+  font-family: 'Coming Soon', cursive;
+  font-size: 1rem;
+}
 
 /*RESUME PAGE*/
 .resume {
@@ -223,4 +235,7 @@ img {
 }
 
 
-
+.handwritten {
+  font-family: 'Coming Soon', cursive;
+  font-size: 2rem;
+}
