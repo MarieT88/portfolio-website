@@ -1,10 +1,6 @@
 /* color palette
-#ff598f	 pink
-#fd8a5e	 oragne
-#e0e300	 green
-#01dddd	 torquise
+#ffacec	 pink
 #00bfaf  blue
-#eff17f light green
 */
 
 /*BODY*/
@@ -24,31 +20,6 @@
   
 
 /* HEADER */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 6rem;
-    /*color: black;*/
-    background-color: lightpink;
-    /*background-image: linear-gradient(180deg, #fdb89e, #eff17f
-    );*/
-}
-
-.titles {
-    text-align: left;
-}
-
-.name {
-  /*font-family: 'Rock Salt', cursive;*/
-  font-family: 'Rubik Doodle Shadow', system-ui;
-  /*text-shadow: 2px 2px 4px #ff598f;*/
-  font-size: 4rem;
-  padding: none;
-}
 
 .titles h1 {
   margin: 0; 
@@ -94,7 +65,7 @@ nav a:hover {
 /* Sidebar/left column */
 .side {
   flex: 0 0 20%;
-  padding: 30px;
+  padding: 30px, 30px, 30px, 30px;
   text-align: center;
   background: #ffacec; 
 }
@@ -150,9 +121,9 @@ nav a:hover {
   font-weight: bolder;
 }
 
-.handwritten {
-  font-family: 'Coming Soon', cursive;
-  font-size: 1rem;
+.skillpaper {
+  margin-top: 1rem;
+  box-shadow: 8px 8px lightgray;
 }
 
 /*RESUME PAGE*/
@@ -165,7 +136,7 @@ nav a:hover {
   background-color: white;
   border-radius: 8px;
   box-shadow: 8px 8px lightgray;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   margin-left: 2rem;
   margin-right: 4rem;
@@ -222,6 +193,7 @@ nav a:hover {
 
 .projectcontainer {
   display: flex; 
+  
 }
 
 .cards-container {
@@ -229,17 +201,13 @@ nav a:hover {
   display: flex; 
   flex-wrap: wrap; 
   justify-content: flex-start; 
-  margin-bottom: 40px;
-  margin-top: 20px;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 
-.handwritten {
-  font-family: 'Coming Soon', cursive;
-  font-size: 2rem;
-}
 
 
 
