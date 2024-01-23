@@ -1,5 +1,6 @@
 /* color palette
 #ffacec	 pink
+#ff598f  hot pink
 #00bfaf  blue
 */
 
@@ -19,18 +20,6 @@
   }
   
 
-/* HEADER */
-
-.titles h1 {
-  margin: 0; 
-}
-
-.titles h2 {
-  margin: 0; 
-  font-size: 1.4rem; 
-}
-
-
 /*NAVBAR*/
 nav {
   display: flex;
@@ -49,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #00bfaf;
+  color: #ff598f;
 }
 
 
@@ -107,18 +96,8 @@ nav a:hover {
 }
 
 .social-icons a:hover {
-  color: #00bfaf;
+  color: #ff598f;
   transform: scale(1.2);
-}
-
-.sideImg {
- border-radius: 8px;
- box-shadow: 8px 8px 0 0  #00bfaf; 
-}
-
-.aqua-text {
-  color: #00bfaf;
-  font-weight: bolder;
 }
 
 .skillpaper {
