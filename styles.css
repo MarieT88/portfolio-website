@@ -46,11 +46,22 @@ nav a:hover {
 /* HOME PAGE */
 
 /* Column container */
-.row {  
+/*.row {  
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+}*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  background-image: url('images/corkboard.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
   
 /* Sidebar/left column */
 .side {
@@ -68,7 +79,7 @@ nav a:hover {
   padding-left: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
-  background-color: #ffacec;
+  background-color: transparent;
   border-radius: 8px;
   /*box-shadow: 10px 10px #e0e300;*/
   margin-top: 2rem;
