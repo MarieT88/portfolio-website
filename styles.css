@@ -56,7 +56,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  background-image: url('images/corkboard.jpg');
+  /*background-image: url('images/corkboard.jpg');*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
