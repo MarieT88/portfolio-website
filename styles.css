@@ -204,9 +204,9 @@ nav a:hover {
 
 .marker-font {
   font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  color: black; 
-  text-shadow: 1px 1px 0 #f5f5f5; 
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.7); /* Black color with 70% opacity */
 }
 
