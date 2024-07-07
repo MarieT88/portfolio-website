@@ -17,7 +17,41 @@
     flex-direction: column;
     min-height: 100vh;
     background-color:#ffacec;
+    cursor: none; /* Hide the default cursor */
   }
+
+/*CURSOR*/
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  pointer-events: none; /* Ensure pointer events pass through the custom cursor */
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Create the heart shape using before and after pseudo-elements */
+.custom-cursor::before,
+.custom-cursor::after {
+  content: '';
+  width: 10px;
+  height: 16px;
+  background-color: #ff69b4; /* Pink color */
+  position: absolute;
+  border-radius: 10px 10px 0 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6), 0 0 20px rgba(255, 105, 180, 0.4); /* Add some glow */
+}
+
+.custom-cursor::after {
+  left: 10px;
+  transform: rotate(45deg);
+}
+
+
   
 
 /*NAVBAR*/
@@ -36,6 +70,7 @@ nav a {
   padding: 5px 10px;
   transition: background-color 0.3s ease;
   display: block;
+  cursor: none;
 }
 
 nav a:hover {
@@ -103,6 +138,7 @@ nav a:hover {
   font-size: 24px;
   color: #333;
   transition: color 0.3s;
+  cursor: none;
 }
 
 .social-icons a:hover {
