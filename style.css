@@ -51,12 +51,12 @@
   transform: rotate(45deg);
 }
 
-/* Hide the default cursor for links */
-a, a:hover, a:active {
+/* Hide the default cursor for links and buttons */
+a, a:hover, a:active, button, button:hover, button:active {
   cursor: none; /* Ensure the custom cursor is used */
 }
 
-  
+
 
 /*NAVBAR*/
 nav {
