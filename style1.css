@@ -1,4 +1,10 @@
-  
-  body {
-    color: blue;
-  }
+
+
+/* HIDDEN HTML ELEMENTS */
+.post-it {
+  display: none;
+}
+
+.marie-photo-hearts {
+  display: none;
+}

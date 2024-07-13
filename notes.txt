@@ -1,0 +1,16 @@
+STYLING NOTES
+
+
+HIDING HTML ELEMENTS USING CSS:
+
+completely remove the element from the document flow, making it as if it doesn’t exist:
+
+.hidden {
+  display: none;
+}
+
+hide the element but it will still occupy space in the document flow:
+
+.hidden {
+  visibility: hidden;
+}
