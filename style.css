@@ -97,25 +97,16 @@ nav a:hover {
 /* Sidebar/left column */
 .side {
   flex: 0 0 20%;
-  padding: 30px, 30px, 30px, 30px;
+  padding-top: 1rem;
   text-align: center;
   background: #ffacec; 
 }
 
 /* Main column */
-
 .main {
   flex: 1;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
-  background-color: transparent;
-  border-radius: 8px;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  margin-left: 2rem;
-  margin-right: 4rem;
+  padding: 1rem;
+  background: linear-gradient(to right, #ffacec, white);
 }
 
 /* social icons */
@@ -195,7 +186,7 @@ nav a:hover {
 }
 
 .big-word {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #ff598f;
 }
 
