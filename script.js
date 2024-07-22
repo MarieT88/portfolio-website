@@ -15,3 +15,37 @@ document.addEventListener('DOMContentLoaded', function() {
     button.innerHTML = styledText;
   });
   
+
+// audio player
+document.addEventListener('DOMContentLoaded', () => {
+  const audio = document.getElementById('audio');
+  const playPauseButton = document.getElementById('play-pause');
+  const seekBar = document.getElementById('seek-bar');
+  const stopButton = document.getElementById('stop');
+
+  playPauseButton.addEventListener('click', () => {
+      if (audio.paused) {
+          audio.play();
+          playPauseButton.textContent = 'Pause';
+      } else {
+          audio.pause();
+          playPauseButton.textContent = 'Play';
+      }
+  });
+
+  audio.addEventListener('timeupdate', () => {
+      const value = (audio.currentTime / audio.duration) * 100;
+      seekBar.value = value;
+  });
+
+  seekBar.addEventListener('input', () => {
+      const time = (seekBar.value / 100) * audio.duration;
+      audio.currentTime = time;
+  });
+
+  stopButton.addEventListener('click', () => {
+      audio.pause();
+      audio.currentTime = 0;
+      playPauseButton.textContent = 'Play';
+  });
+});
