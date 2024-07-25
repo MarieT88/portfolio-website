@@ -1,4 +1,4 @@
-// cursor functionality
+// cursor functionality style.css
 document.addEventListener('mousemove', function(e) {
     const customCursor = document.querySelector('.custom-cursor');
     customCursor.style.left = `${e.pageX}px`;
@@ -16,36 +16,41 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
 
-// audio player
+// AUDIO PLAYER
 document.addEventListener('DOMContentLoaded', () => {
-  const audio = document.getElementById('audio');
-  const playPauseButton = document.getElementById('play-pause');
-  const seekBar = document.getElementById('seek-bar');
-  const stopButton = document.getElementById('stop');
-
-  playPauseButton.addEventListener('click', () => {
-      if (audio.paused) {
-          audio.play();
-          playPauseButton.textContent = 'Pause';
-      } else {
-          audio.pause();
-          playPauseButton.textContent = 'Play';
-      }
-  });
-
-  audio.addEventListener('timeupdate', () => {
+    const audio = document.getElementById('audio');
+    const playButton = document.getElementById('play-button');
+    const pauseButton = document.getElementById('pause-button');
+    const progressBar = document.getElementById('progress-bar');
+  
+    playButton.addEventListener('click', () => {
+      audio.play();
+      playButton.style.display = 'none';
+      pauseButton.style.display = 'inline';
+    });
+  
+    pauseButton.addEventListener('click', () => {
+      audio.pause();
+      playButton.style.display = 'inline';
+      pauseButton.style.display = 'none';
+    });
+  
+    audio.addEventListener('timeupdate', () => {
       const value = (audio.currentTime / audio.duration) * 100;
-      seekBar.value = value;
-  });
-
-  seekBar.addEventListener('input', () => {
-      const time = (seekBar.value / 100) * audio.duration;
+      progressBar.value = value;
+    });
+  
+    progressBar.addEventListener('input', () => {
+      const time = (progressBar.value / 100) * audio.duration;
       audio.currentTime = time;
-  });
-
-  stopButton.addEventListener('click', () => {
+    });
+  
+    stopButton.addEventListener('click', () => {
       audio.pause();
       audio.currentTime = 0;
-      playPauseButton.textContent = 'Play';
+      playButton.style.display = 'inline';
+      pauseButton.style.display = 'none';
+      progressBar.value = 0;
+    });
   });
-});
+  
