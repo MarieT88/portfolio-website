@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const playButton = document.getElementById('play-button');
     const pauseButton = document.getElementById('pause-button');
     const progressBar = document.getElementById('progress-bar');
+    const stopButton = document.getElementById('stop');
   
     playButton.addEventListener('click', () => {
       audio.play();
